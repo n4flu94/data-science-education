@@ -1,0 +1,15 @@
+---
+title: "my_map"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## My map
+
+```{r, echo = FALSE}
+library(leaflet)
+leaflet() %>% addTiles() %>% addMarkers(lat = 10.762622, lng = 106.660172, popup = "Hey there!")
+```
